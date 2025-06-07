@@ -421,7 +421,7 @@ section {
     box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
-.project-image {
+/* .project-image {
     height: 200px;
     background: linear-gradient(45deg, #667eea, #764ba2);
     display: flex;
@@ -430,6 +430,29 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: 700;
+} */
+
+.project-image {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-content {
